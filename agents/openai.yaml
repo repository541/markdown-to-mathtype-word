@@ -1,0 +1,4 @@
+interface:
+  display_name: "Markdown to MathType Word"
+  short_description: "Create Times New Roman MathType Word files"
+  default_prompt: "Use $markdown-to-mathtype-word to convert my scientific Markdown into a verified editable MathType Word document."

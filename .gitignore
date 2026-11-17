@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*_OMML_intermediate.docx
+*_MathType_checkpoints/
+*.audit.json
+.DS_Store
+Thumbs.db
