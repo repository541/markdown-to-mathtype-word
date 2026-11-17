@@ -21,20 +21,14 @@ The source Markdown is never overwritten. The converter refuses to overwrite exi
   py -m pip install -r requirements.txt
   ```
 
-- For agent use, a client that supports the `SKILL.md` format (for example WorkBuddy or Claude Code).
+- For agent use, any client that supports the `SKILL.md` format.
 
 ## Install as a skill
 
-Clone this repository directly into your skills directory:
-
-```bat
-:: WorkBuddy (user-level)
-git clone https://github.com/repository541/markdown-to-mathtype-word.git "%USERPROFILE%\.workbuddy\skills\markdown-to-mathtype-word"
-```
+Clone this repository into your agent's skills directory. Keep the folder name `markdown-to-mathtype-word`:
 
 ```bash
-# Claude Code
-git clone https://github.com/repository541/markdown-to-mathtype-word.git ~/.claude/skills/markdown-to-mathtype-word
+git clone https://github.com/repository541/markdown-to-mathtype-word.git "<path-to-your-skills-directory>/markdown-to-mathtype-word"
 ```
 
 Then ask the agent to use the `markdown-to-mathtype-word` skill. The bundled `agents/openai.yaml` provides a display name and a default prompt for clients that read it.
