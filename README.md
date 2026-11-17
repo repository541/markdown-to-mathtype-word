@@ -31,6 +31,14 @@ Clone this repository into your agent's skills directory. Keep the folder name `
 git clone https://github.com/repository541/markdown-to-mathtype-word.git "<path-to-your-skills-directory>/markdown-to-mathtype-word"
 ```
 
+Or click **Code → Download ZIP** on the GitHub page, extract it, and put the `markdown-to-mathtype-word` folder into your agent's skills directory.
+
+Before first use, open a terminal in the repository folder and install the Python dependencies:
+
+```bat
+py -m pip install -r requirements.txt
+```
+
 Then ask the agent to use the `markdown-to-mathtype-word` skill. The bundled `agents/openai.yaml` provides a display name and a default prompt for clients that read it.
 
 ## Direct command-line use
