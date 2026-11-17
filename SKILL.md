@@ -18,7 +18,7 @@ Convert a scientific Markdown file to a `.docx` without rasterizing or flattenin
 Run the portable entry point in `scripts`:
 
 ```bat
-Convert-MarkdownToMathTypeWord.bat "C:\path\paper.md" "C:\path\paper_MathType_TNR11.docx"
+scripts\Convert-MarkdownToMathTypeWord.bat "C:\path\paper.md" "C:\path\paper_MathType_TNR11.docx"
 ```
 
 The optional third argument is the MathType batch size; `10` is the default. The PowerShell controller preserves the Markdown source, creates an OMML intermediate and validated checkpoints beside the requested output, and refuses to overwrite any existing artifact.
@@ -26,7 +26,7 @@ The optional third argument is the MathType batch size; `10` is the default. The
 For an OMML-only diagnostic pass, use:
 
 ```powershell
-.\Convert-MarkdownToMathTypeWord.ps1 -MarkdownPath "C:\path\paper.md" -IntermediateOnly
+.\scripts\Convert-MarkdownToMathTypeWord.ps1 -MarkdownPath "C:\path\paper.md" -IntermediateOnly
 ```
 
 ## Required result

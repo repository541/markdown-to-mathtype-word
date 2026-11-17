@@ -31,7 +31,7 @@ Clone this repository into your agent's skills directory. Keep the folder name `
 git clone https://github.com/repository541/markdown-to-mathtype-word.git "<path-to-your-skills-directory>/markdown-to-mathtype-word"
 ```
 
-Or click **Code → Download ZIP** on the GitHub page, extract it, and put the `markdown-to-mathtype-word` folder into your agent's skills directory.
+Or click **Code → Download ZIP** on the GitHub page. The ZIP extracts to `markdown-to-mathtype-word-main`; rename that folder to `markdown-to-mathtype-word` before putting it into your agent's skills directory.
 
 Before first use, open a terminal in the repository folder and install the Python dependencies:
 
@@ -57,10 +57,10 @@ scripts\Convert-MarkdownToMathTypeWord.bat "C:\path\paper.md" "C:\path\paper_Mat
 ## Standalone verification
 
 ```bat
-py scripts\verify_mathtype_docx.py "C:\path\paper_MathType_TNR11.docx"
+py scripts\verify_mathtype_docx.py "C:\path\paper_MathType_TNR11.docx" --stage mathtype
 ```
 
-It checks ZIP integrity, OLE / `Equation.DSMT4` counts, zero residual OMML, and the Times New Roman declaration in every MathType object. Always open the final DOCX in Word and spot-check inline, display, fraction, script, and unit formulas before delivery.
+`--stage mathtype` enforces ZIP integrity, OLE / `Equation.DSMT4` counts, zero residual OMML, and the Times New Roman declaration in every MathType object. Without `--stage`, the script only prints an inspection report and does not fail on problems. Useful extra flags: `--expected-equations N` and `--json`. Always open the final DOCX in Word and spot-check inline, display, fraction, script, and unit formulas before delivery.
 
 ## Limitations
 
