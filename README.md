@@ -29,12 +29,12 @@ Clone this repository directly into your skills directory:
 
 ```bat
 :: WorkBuddy (user-level)
-git clone https://github.com/<YOUR_NAME>/markdown-to-mathtype-word.git "%USERPROFILE%\.workbuddy\skills\markdown-to-mathtype-word"
+git clone https://github.com/repository541/markdown-to-mathtype-word.git "%USERPROFILE%\.workbuddy\skills\markdown-to-mathtype-word"
 ```
 
 ```bash
 # Claude Code
-git clone https://github.com/<YOUR_NAME>/markdown-to-mathtype-word.git ~/.claude/skills/markdown-to-mathtype-word
+git clone https://github.com/repository541/markdown-to-mathtype-word.git ~/.claude/skills/markdown-to-mathtype-word
 ```
 
 Then ask the agent to use the `markdown-to-mathtype-word` skill. The bundled `agents/openai.yaml` provides a display name and a default prompt for clients that read it.
